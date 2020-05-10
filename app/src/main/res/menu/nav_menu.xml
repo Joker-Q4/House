@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/housing_information"
+            android:title="房源信息" />
+
+        <item
+            android:id="@+id/houses_owner"
+            android:title="房主信息" />
+
+        <item
+            android:id="@+id/customer_demand"
+            android:title="房客需求" />
+
+        <item
+            android:id="@+id/houses_lease"
+            android:title="房屋租赁" />
+    </group>
+</menu>

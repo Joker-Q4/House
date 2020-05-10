@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.sau.joker">
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <!-- 监听网络的变化 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 调用照相机 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name="cn.edu.sau.JokerApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name="cn.edu.sau.ui.Login"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.edu.sau.ui.WorkerList" />
+        <activity android:name="cn.edu.sau.ui.WorkerOne" />
+        <activity android:name="cn.edu.sau.ui.MainActivity" />
+        <activity android:name="cn.edu.sau.ui.AdminLogin" />
+        <activity android:name="cn.edu.sau.ui.CropActivity" />
+        <activity android:name="cn.edu.sau.ui.HouseList" />
+        <activity android:name="cn.edu.sau.ui.chart.house.Chart_Area" />
+        <activity android:name="cn.edu.sau.ui.chart.house.Chart_Rent" />
+        <activity android:name="cn.edu.sau.ui.chart.house.Chart_Residential_Quarters" />
+        <activity android:name="cn.edu.sau.ui.chart.house.Chart_Respective_Area" />
+        <activity android:name="cn.edu.sau.ui.chart.house.Chart_Stater" />
+        <activity android:name="cn.edu.sau.ui.chart.contract.Chart_Agent" />
+        <activity android:name="cn.edu.sau.ui.chart.contract.Chart_Date" />
+        <activity android:name="cn.edu.sau.ui.OwnerList" />
+        <activity android:name="cn.edu.sau.ui.TenantList" />
+        <activity android:name="cn.edu.sau.ui.ContractList" />
+        <activity android:name="cn.edu.sau.ui.HouseOne" />
+        <activity android:name="cn.edu.sau.ui.OwnerOne" />
+        <activity android:name="cn.edu.sau.ui.TenantOne" />
+        <activity android:name="cn.edu.sau.ui.ContractOne" />
+
+    </application>
+</manifest>

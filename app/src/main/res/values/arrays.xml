@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!--沈阳各区 -->
+    <string-array name="respective_area">
+        <item>和平区</item>
+        <item>沈河区</item>
+        <item>大东区</item>
+        <item>皇姑区</item>
+        <item>铁西区</item>
+        <item>苏家屯区</item>
+        <item>浑南区</item>
+        <item>沈北新区</item>
+        <item>于洪区</item>
+        <item>辽中区</item>
+    </string-array>
+
+    <!--户型 -->
+    <string-array name="apartment">
+        <item>一室一厅</item>
+        <item>一室两厅</item>
+        <item>两室一厅</item>
+        <item>两室两厅</item>
+        <item>三室一厅</item>
+        <item>三室两厅</item>
+        <item>四室一厅</item>
+        <item>四室两厅</item>
+        <item>四室三厅</item>
+    </string-array>
+
+    <!-- 朝向 -->
+    <string-array name="orientation">
+        <item>南北</item>
+        <item>东西</item>
+    </string-array>
+
+    <!-- 空房或已租 -->
+    <string-array name="state">
+        <item>空房</item>
+        <item>已租</item>
+    </string-array>
+</resources>

@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "cn.edu.sau.joker"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+//        multiDexEnabled true
+    }
+//    dexOptions {
+//        javaMaxHeapSize "4g" //specify the heap size for the dex process
+//        preDexLibraries = false //delete the already predexed libraries
+//    }
+//    lintOptions {
+//        checkReleaseBuilds false
+//        abortOnError false
+//    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.jniLibs.srcDirs = ['libs']
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/rxjava.properties'
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    //数据库
+    implementation 'org.litepal.android:core:1.4.1'
+    // 侧滑栏
+    implementation 'com.android.support:design:26.1.0'
+    // 圆形头像
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+    // 图像剪切
+    implementation ('com.kevin:crop:1.0.2') {
+        // 如果已经引入 support:appcompat-v7 可以加上这句话
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    // butter knife
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    // OKHttp
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation 'com.squareup.okio:okio:1.6.0'
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    // 图表库
+    implementation 'com.github.lecho:hellocharts-library:1.5.8'
+}

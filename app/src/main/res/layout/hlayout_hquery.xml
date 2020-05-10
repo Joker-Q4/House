@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="租金："/>
+
+            <EditText
+                android:id="@+id/query_min_rent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_weight="1.3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="-"/>
+
+            <EditText
+                android:id="@+id/query_max_rent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_weight="1.3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="户型："/>
+
+            <Spinner
+                android:id="@+id/query_apartment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:entries="@array/apartment"
+                android:layout_weight="1">
+            </Spinner>
+
+            <!--<EditText-->
+                <!--android:id="@+id/query_apartment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textSize="18sp"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_weight="1"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="面积："/>
+
+            <EditText
+                android:id="@+id/query_min_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_weight="1.3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="-"/>
+
+            <EditText
+                android:id="@+id/query_max_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_weight="1.3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="朝向："/>
+
+            <Spinner
+                android:id="@+id/query_orientation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:entries="@array/orientation"
+                android:layout_weight="1">
+            </Spinner>
+
+            <!--<EditText-->
+                <!--android:id="@+id/query_orientation"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textSize="18sp"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_weight="1"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="小区："/>
+
+            <EditText
+                android:id="@+id/query_residential_quarters"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="所在区："/>
+
+            <EditText
+                android:id="@+id/query_respective_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="是否已租："/>
+
+            <EditText
+                android:id="@+id/query_stater"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/query"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="点击查询"/>
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

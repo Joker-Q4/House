@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Joker</string>
+    <string name="title_chat">聊天</string>
+    <string name="title_home">好友</string>
+    <string name="title_setting">设置</string>
+    <string name="activity_loginphone_num">手机号：</string>
+    <string name="activity_loginphone_pas">密码：</string>
+    <string name="activity_loginphone_reg">注      册</string>
+    <string name="activity_loginphone_login">登 陆</string>
+    <string name="activity_loginphone_des1">有账号了？现在就</string>
+    <string name="activity_loginphone_des2">一个吧。</string>
+    <string name="activity_loginphone_yan">验证码：</string>
+    <string name="activity_login_login">登      陆</string>
+    <string name="activity_login_reg">注 册</string>
+    <string name="activity_login_des">还没有账号？现在就</string>
+    <string name="activity_login_rem">记住此账号</string>
+
+    <string name="label_cancel">取消</string>
+    <string name="label_ok">确定</string>
+    <string name="permission_title_rationale">权限需求</string>
+    <string name="permission_read_storage_rationale">选择图片时需要读取权限</string>
+    <string name="permission_write_storage_rationale">拍照时需要存储权限</string>
+</resources>
